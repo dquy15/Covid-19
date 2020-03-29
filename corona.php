@@ -15,7 +15,7 @@ function covid_19(){
                    ), // End 
       )
     );
-    $fp = fopen('vietnam.json', 'w');
+    $fp = fopen('covid.json', 'w');
     fwrite($fp, json_encode($result, JSON_PRETTY_PRINT));   // here it will print the array pretty
     fclose($fp);
 }
